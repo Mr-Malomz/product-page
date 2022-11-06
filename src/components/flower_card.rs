@@ -8,10 +8,10 @@ pub struct FlowerCardProp {
 }
 
 #[function_component(FlowerCard)]
-fn flower_card(FlowerCardProp { flower }: &FlowerCardProp) -> Html {
-    let name = flower.name.name.clone();
-    let image_url = flower.img.value.value[0].url.clone();
-    let image_alt = flower.img.value.value[0].alt.clone();
+pub fn flower_card(FlowerCardProp { flower }: &FlowerCardProp) -> Html {
+    let name = flower.parameters.name.value.clone();
+    let image_url = flower.parameters.img.value[0].url.clone();
+    let image_alt = flower.parameters.img.value[0].alt.clone();
 
     html! {
         <div class="col-md-6 col-lg-4 col-xl-3 mb-5">
