@@ -696,7 +696,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('product-page-3d9f7e187f228929_bg.wasm', import.meta.url);
+        input = new URL('product-page-716ba81a79357e92_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
